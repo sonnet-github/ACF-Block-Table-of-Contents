@@ -1,0 +1,24 @@
+{
+    "name": "acf/sectors-we-serve",
+    "title": "Sectors we Serve",
+    "description": "4 Columns with Image and Text",
+    "category": "custom-layout",
+    "icon": "screenoptions",
+    "keywords": ["four-column", "image", "sectors we serve", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "sectors-we-serve.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "sectors-we-serve/preview.jpg"
+            }
+        }
+    }
+}

@@ -1,0 +1,106 @@
+h1{
+    @include typography(getFont(1), 110px, 1em, 400, inherit);
+    letter-spacing: 0.5px;
+    font-style: italic;
+    max-width: 950px;
+    box-sizing: border-box;
+    margin: 0 auto 55px;
+
+    @media(max-width: $bp_mobile){
+        font-size: 52px;
+        margin: 0 auto 37px;
+    }
+}
+h2{
+    @include typography(getFont(1), 66px, 1.05em, 400, inherit);
+    letter-spacing: 0.5px;
+    font-style: italic;
+    max-width: $containerMaxWidth;
+    box-sizing: border-box;
+    margin: 0 auto 40px;
+
+    @media(max-width: $bp_mobile){
+        font-size: 40px;
+        margin: 0 auto 26px;
+    }
+}
+h3{
+    @include typography(getFont(1), 64px, 1.15em, 400, inherit);
+    letter-spacing: 0.5px;
+    max-width: $containerMaxWidth;
+    box-sizing: border-box;
+    margin: 0 auto 22px;
+
+    @media(max-width: $bp_mobile){
+        font-size: 40px;
+        margin: 0 auto 26px;
+    }
+}
+h4 {
+    @include typography(getFont(1), 48px, 1.15em, 400, inherit);
+    letter-spacing: 0.5px;
+    max-width: $containerMaxWidth;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+
+    @media(max-width: $bp_mobile){
+        font-size: 32px;
+        margin: 0 auto 17px;
+    }
+}
+h5{
+    @include typography(getFont(1), 18px, 1.15em, 400, inherit);
+    letter-spacing: 0.5px;
+    max-width: $containerMaxWidth;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+
+    @media(max-width: $bp_mobile){
+        font-size: 14px;
+    }
+}
+
+blockquote{
+    @include typography(getFont(1), 24px, 1.15em, 400, inherit);
+    font-style: italic;
+    letter-spacing: 0.5px;
+    max-width: $containerMaxWidth;
+    box-sizing: border-box;
+    margin: 0 auto 20px;
+
+    @media(max-width: $bp_mobile){
+        font-size: 18px;
+    }
+}
+
+ul, ol, li, p{
+    @include typography(getFont(2), 14px, 1.5em, 400, inherit);
+    max-width: $containerMaxWidth;
+    box-sizing: border-box;
+    margin: 0 auto 1.35em;
+}
+
+ul, ol{
+    list-style-position: outside;
+    padding-left: 15px;
+}
+
+ul, ol, li{
+    margin: 0 0 1em;
+}
+
+a{
+    @include typography(inherit, inherit, inherit, inherit, inherit);
+}
+
+b, strong{
+    font-weight: 700;
+}
+
+em{
+    font-style: italic;
+}
+
+img, iframe, svg, video{
+    max-width: 100%;
+}

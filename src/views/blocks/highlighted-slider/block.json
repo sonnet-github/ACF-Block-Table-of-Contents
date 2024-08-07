@@ -1,0 +1,24 @@
+{
+    "name": "acf/highlighted-slider",
+    "title": "Highlighted Sider",
+    "description": "Highlighted Sider Widget. Automatically pulls slides from a centralized listing set in theme settings (Theme settings > Highlighted Sider). Note: Uses external carousel js plugin.",
+    "category": "custom-layout",
+    "icon": "testimonial",
+    "keywords": ["blog", "slider", "carousel", "single"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "highlighted-slider.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "highlighted-slider/preview.jpg"
+            }
+        }
+    }
+}

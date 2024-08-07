@@ -1,0 +1,204 @@
+.block--custom-layout__marketing-events {
+    text-align: center;
+    padding: 10px 0 40px;
+    &.layout-two {
+        padding-top: 75px;
+        padding-bottom: 75px;
+        @media (max-width: $bp_mobileLandscape) {
+            padding-top: 50px;
+            padding-bottom: 50px;
+        }
+    }
+    .left {
+        text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+
+    hr {
+        max-width: 80.517%;
+        margin: 0 auto 60px;
+        border: none;
+        height: 1px;
+        width: 100%;
+        background: getColor(2);
+        @media (max-width: $bp_mobileLandscape) {
+            margin-bottom: 40px;
+        }
+    }
+    h4 {
+        margin-bottom: 0;
+        @media (max-width: $bp_mobileLandscape) {
+            font-size: 25px;
+            line-height: 31px;
+            margin-bottom: 10px;
+        }
+    }
+    p {
+        @include typography(getFont(1), 24px, 35px, 300, $textColor);
+        margin-bottom: 0;
+        // @media (max-width: $bp_mobileLandscape) {
+        //     font-size: 25px;
+        //     line-height: 31px;
+        // }
+    }
+    .form-container {
+        // max-width: 1265px;
+        max-width: 1512px;
+        margin: 45px auto 0;
+        @media (max-width: $bp_mobileLandscape) {
+            margin-top: 35px;
+        }
+        form {
+            margin: 0 !important;
+            @include typography(getFont(1), 20px, 29px, 300, $textColor);
+            h2 {
+                display: none;
+            }
+            p {
+                &:empty {
+                    display: none;
+                }
+            }
+    
+            .four-col {
+                // display: grid;
+                // grid-template-columns: repeat(4, 1fr);
+                // grid-gap: 15px;
+                align-items: baseline;
+                justify-content: center;
+
+                display: flex;
+                flex-wrap: wrap;
+                label {
+                    @include typography(getFont(1), 16px, 23px, 300, $textColor);
+                    margin-top: 10px;
+                    margin-bottom: 0;
+                    text-align: left;
+                }
+                @media (max-width: $bp_mobileLandscape) {
+                    // grid-template-columns: repeat(1, 1fr);
+                    // grid-gap: 0;
+                    display: block;
+                }
+            }
+    
+    
+            label {
+                margin-bottom: 10px;
+                display: block;
+                &.title {
+                    margin-bottom: 20px;
+                }
+            }
+
+            .row {
+                flex: 1;
+                &:not(:first-child), &:not(:last-child) {
+                    padding: 0 7.5px;
+                }
+                &:first-child {
+                    padding-right: 7.5px;
+                }
+                &:last-child {
+                    padding-left: 7.5px;
+                }
+                &.submit {
+                    max-width: 220px;
+                }
+                @media (max-width: $bp_mobileLandscape) {
+                    margin-bottom: 20px;
+                    padding: 0;
+                    &.submit {
+                        max-width: unset;
+                    }
+                }
+            }
+    
+            input {
+                display: block;
+                border: 1px solid getColor(2);
+                outline: none;
+                appearance: none;
+                @include typography(getFont(1), 20px, 29px, 300, $textColor);
+                width: 100%;
+                padding: 8.2px;
+                min-width: 366px;
+                @media (max-width: $bp_desktop) {
+                    min-width: unset;
+                }
+                @media (max-width: $bp_mobileLandscape) {
+                    padding: 11.2px;
+                }
+            }
+            button {
+                cursor: pointer;
+                padding: 18px;
+                // width: 240px;
+                width: 100%;
+                // max-width: 411px;
+                text-decoration: none;
+                outline: none;
+                appearance: none;
+                text-align: center;
+                @include typography(getFont(1), 24px, 35px, 700, $lightColor);
+                text-transform: uppercase;
+                @include transition(0.35s);
+                background: getColor(2);
+                border: none;
+                em {
+                    font-style: unset;
+                }
+                &:hover {
+                    background: $buttonHover;
+                }
+        
+            }
+        }
+        .forminator-col {
+            padding: 0 !important;
+        }
+        .forminator-row {
+            margin: 0 !important;
+        }
+        .forminator-button {
+            width: 240px !important;
+            height: 72px !important;
+            font-size: 16px !important;
+            line-height: 23px !important;
+            text-transform: uppercase !important;
+            font-family: getFont(1) !important;
+            font-weight: 600 !important;
+            border: 1px solid getColor(2) !important;
+            @include transition(0.35s);
+            border-radius: 0 !important;
+            &:hover {
+                box-shadow: none !important;
+            }
+        }
+        .forminator-input {
+            height: 72px !important;
+            padding: 25px 40px !important;
+            font-size: 16px !important;
+            line-height: 23px !important;
+            font-weight: 600 !important;
+            border-radius: 0 !important;
+            font-family: getFont(1) !important;
+            @media (min-width: $bp_mobileLandscape) {
+                border-right: 0 !important;
+            }
+            @media (max-width: $bp_mobileLandscape) {
+                padding: 25px 15px !important;
+            }
+            &::placeholder {
+                font-size: 16px !important;
+                line-height: 23px !important;
+                font-weight: 600 !important;
+            }
+        }
+    }
+}

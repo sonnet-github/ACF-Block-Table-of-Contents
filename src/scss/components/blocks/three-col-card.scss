@@ -1,0 +1,112 @@
+.block--custom-layout__three-col-card {
+    text-align: center; 
+    padding: 80px 0 100px;
+    .left {
+        text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+    h3, .subtitle {
+        &.left {
+            text-align: left;
+        }
+        &.center {
+            text-align: center;
+        }
+        &.right {
+            text-align: right;
+        }
+    }
+    h3 {
+        @include typography(getFont(1), 24px, 31.2px, 600, inherit);
+        max-width: 55%;
+        margin: 0 auto 70px;
+        @media (max-width: $bp_tabletPortrait2) {
+            max-width: 95%;
+        }
+        @media (max-width: $bp_mobile) {
+            max-width: 100%;
+        }
+        &.heading {
+            margin-bottom: 20px;
+        }
+    }
+    .subtitle {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+    .tiles-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+        grid-gap: 85px 50px;
+        @media (max-width: $bp_mobileMenuShift) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $bp_tabletLandscape) {
+            grid-gap: 50px;
+        }
+        @media (max-width: $bp_tabletPortrait2) {
+            grid-template-columns: repeat(1, 1fr);
+        }
+        .tile-item {
+            min-width: 400px;
+            max-width: 400px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 60px 70px 40px;
+            background: $lightColor;
+            @media (max-width: $bp_desktopMedium) {
+                min-width: unset;
+                // max-width: 400px;
+            }
+            @media (max-width: $bp_mobileMenuShift) {
+                padding-left: 50px;
+                padding-right: 50px;
+                min-width: 350px;
+
+            }
+            @media (max-width: $bp_mobileLandscape) {
+                min-width: unset;
+            }
+            @media (max-width: $bp_mobile) {
+                max-width: 100%;
+                width: 100%;
+                padding: 40px 30px;
+            }
+            // &:first-child {
+            //     @media (min-width: $bp_desktopMedium) {
+            //         position: relative;
+            //         left: -18px;
+            //     }
+            // }
+            img {
+                margin-bottom: 25px;
+            }
+            h4 {
+                margin-bottom: 0;
+                @include typography(getFont(1), 18px, 23.4px, 500, inherit);
+                @media (max-width: $bp_mobileMenuShift) {
+                    @include typography(getFont(1), 24px, 31.2px, 500, inherit);
+                }
+                @media (max-width: $bp_mobileLandscape) {
+                    br {
+                        display: none;
+                    }
+                }
+            }
+            p {
+                @include typography(getFont(1), 15px, 19.8px, 500, inherit);
+                margin-bottom: 0;
+                margin-top: 10px;
+            }
+        }
+    }
+    .cta-wrap {
+        margin-top: 80px;
+    }
+}

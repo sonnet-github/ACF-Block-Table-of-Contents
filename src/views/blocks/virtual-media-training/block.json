@@ -1,0 +1,24 @@
+{
+    "name": "acf/virtual-media-training",
+    "title": "Virtual Media Training",
+    "description": "Virtual Media Training Block",
+    "category": "custom-layout",
+    "icon": "cover-image",
+    "keywords": ["virtual media training", "banner"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "virtual-media-training.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "virtual-media-training/preview.jpg"
+            }
+        }
+    }
+}

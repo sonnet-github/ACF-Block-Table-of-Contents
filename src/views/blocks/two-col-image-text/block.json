@@ -1,0 +1,24 @@
+{
+    "name": "acf/two-col-image-text",
+    "title": "Two-column image/text",
+    "description": "Two-column 50/50 text and featured image",
+    "category": "custom-layout",
+    "icon": "columns",
+    "keywords": ["two-column", "featured", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "two-col-image-text.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "two-col-image-text/preview.jpg"
+            }
+        }
+    }
+}

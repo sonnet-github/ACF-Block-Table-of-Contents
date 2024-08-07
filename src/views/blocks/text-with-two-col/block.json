@@ -1,0 +1,24 @@
+{
+    "name": "acf/text-with-two-col",
+    "title": "Text with Two Column Images",
+    "description": "Text with Two Column Images",
+    "category": "custom-layout",
+    "icon": "columns",
+    "keywords": ["two-column", "text", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "text-with-two-col.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "text-with-two-col/preview.jpg"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "acf/select-services",
+    "title": "Select Services",
+    "description": "Select Services Widget with 3 Columns and CTA",
+    "category": "custom-layout",
+    "icon": "table-row-after",
+    "keywords": ["three-column", "select services", "cta"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "select-services.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "select-services/preview.jpg"
+            }
+        }
+    }
+}

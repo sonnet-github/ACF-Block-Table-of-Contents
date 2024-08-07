@@ -1,0 +1,24 @@
+{
+    "name": "acf/two-col-icon-text",
+    "title": "Two Column Icon and Text",
+    "description": "Two Columns with Icon and Text",
+    "category": "custom-layout",
+    "icon": "screenoptions",
+    "keywords": ["two-column", "icon", "tiles", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "two-col-icon-text.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "two-col-icon-text/preview.jpg"
+            }
+        }
+    }
+}

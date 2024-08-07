@@ -1,0 +1,46 @@
+.block--custom-layout__text-banner-cta {
+    text-align: center;
+    padding: 10px 0 80px;
+    h3 {
+        @include typography(getFont(1), 64px, 93px, 300, getColor(1));
+        margin-bottom: 30px;
+        @media (max-width: $bp_desktop) {
+            font-size: 54px;
+            line-height: 83px;
+        }
+        &.left {
+            text-align: left;
+        }
+        &.center {
+            text-align: center;
+        }
+        &.right {
+            text-align: right;
+        }
+    }
+    p {
+        @include typography(getFont(1), 32px, 47px, 300, inherit);
+        margin-bottom: 15px;
+        @media (max-width: $bp_mobileLandscape) {
+            font-size: 30px;
+            line-height: 45px;
+            margin-bottom: 50px;
+        }
+    }
+    .intro {
+        :last-child {
+            margin-bottom: 75px;
+        }
+    }
+    .buttons-wrapper {
+        a {
+            &.cta-two {
+                margin-left: 135px;
+                @media (max-width: 1010px) {
+                    margin: 40px auto 0;
+                    display: table;
+                }
+            }
+        }
+    }
+}

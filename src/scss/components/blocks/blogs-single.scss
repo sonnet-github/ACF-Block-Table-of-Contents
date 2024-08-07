@@ -1,0 +1,164 @@
+.block--custom-layout__blogs-single {
+    padding: 90px 0 75px;
+    color: $textColor;
+
+    .content-wrap {
+        .main-content {
+            img {
+                display: block;
+                margin-bottom: 10px;
+            }
+            strong {
+                font-weight: 600;
+            }
+            h1, h2, h3, h4, h5, h6 {
+                color: getColor(2);
+                margin-bottom: 15px;
+                strong, b {
+                    color: getColor(2);
+                    font-weight: 600;
+                }
+            }
+            h2 {
+                @include typography(getFont(1), 24px, 31.2px, 400, getColor(2));
+            }
+            img {
+                vertical-align: bottom;
+                margin-bottom: 45px;
+                margin-top: 35px;
+                &.aligncenter {
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                &.alignright {
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+            }
+            p, ul, li, ol {
+                @include typography(getFont(1), 20px, 26.4px, 400, inherit);
+                margin-bottom: 15px;
+            }
+            ul, ol {
+               padding-left: 0;
+               li {
+                margin-bottom: 15px;
+               } 
+            }
+            p {
+                a {
+                    @media (max-width: $bp_mobileMedium) {
+                        display: block;
+                        text-overflow: ellipsis;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                }
+            }
+            a {
+                text-decoration: none;
+                color: getColor(2);
+                @include transition(0.45s);
+        
+                &:focus,
+                &:hover{
+                    color: getColor(3);
+                }
+            }
+        }
+        .share-icons {
+            text-align: center;
+            padding-top: 45px;
+            padding-bottom: 80px;
+            a {
+                text-decoration: none;
+                @include transition(0.35s);
+                display: inline;
+                vertical-align: middle;
+                &:hover {
+                    opacity: 0.7;
+                }
+                &:not(:last-child) {
+                    margin-right: 10px;
+                    @media (max-width: $bp_mobileLandscape) {
+                        margin-right: 5px;
+                    }
+                }
+                &.heart-icon {
+                    &.active {
+                        svg {
+                            path {
+                                fill: #d10000;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .next-posts {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 85px;
+            p {
+                margin-bottom: 30px;
+                @include typography(getFont(1), 30px, 39px, 400, inherit);
+                @media (max-width: $bp_mobileLandscape) {
+                    margin-bottom: 0;
+                }
+                @media(max-width: $bp_mobile){
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+            }
+            a {
+                @include transition(0.35s);
+                text-decoration: none;
+                // display: inline-flex;
+                img {
+                    max-width: 47px;
+                    max-height: 47px;
+                }
+                &:hover {
+                   h4 {
+                    color: getColor(3);
+                   }
+                   img {
+                    opacity: 0.7;
+                   }
+                }
+            }
+            .categories {
+                text-transform: uppercase;
+                @include typography(getFont(1), 20px, 26px, 500, inherit);
+                max-width: 577px;
+            }
+            h4 {
+                // @include typography(getFont(1), 24px, 31.2px, 600, inherit);
+                margin-bottom: 25px;
+                // max-width: 85%;
+                max-width: 594px;
+                @include transition(0.35s);
+                color: getColor(2);
+                @media (max-width: $bp_mobileMenuShift) {
+                    max-width: 85%;
+                }
+                @media(max-width: $bp_mobile){
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+            }
+            .next {
+                text-align: right;
+                h4, .categories {
+                    margin-right: 0;
+                    margin-left: auto;
+                }
+                a {
+                    justify-content: flex-end;
+                }
+            }
+        }
+    }
+
+
+}

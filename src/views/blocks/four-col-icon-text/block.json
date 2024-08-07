@@ -1,0 +1,24 @@
+{
+    "name": "acf/four-col-icon-text",
+    "title": "Four Column Icon and Text",
+    "description": "Four Columns with Icon and Text",
+    "category": "custom-layout",
+    "icon": "screenoptions",
+    "keywords": ["four-column", "icon", "tiles", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "four-col-icon-text.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "four-col-icon-text/preview.jpg"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "acf/newswire-single",
+    "title": "Newswire Single",
+    "description": "Used in Newswire single pages. Includes Rich Text Editor with share icons and previous and next buttons.",
+    "category": "custom-layout",
+    "icon": "analytics",
+    "keywords": ["newswire single", "rte", "share", "previous", "next"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "newswire-single.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "newswire-single/preview.jpg"
+            }
+        }
+    }
+}

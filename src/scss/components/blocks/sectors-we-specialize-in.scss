@@ -1,0 +1,140 @@
+.block--custom-layout__sectors-we-specialize {
+    padding: 47.5px 0 130px;
+    @media (max-width: $bp_desktopMedium) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    @media (max-width: $bp_mobileLandscape) {
+        padding-bottom: 60px;
+    }
+    .container-block {
+        max-width: 1405px;
+        padding: 0;
+        &.image-right {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            flex-direction: row-reverse;
+            align-items: center;
+            @media (max-width: $bp_mobileMenuShift) {
+                display: block;
+            }
+            > div {
+                flex: 1;
+                @media (max-width: $bp_mobileMenuShift) {
+                    display: block;
+                }
+            }
+            .image-cell {
+                text-align: right;
+            }
+            .text-cell {
+                padding-left: 70px;
+                // padding-right: 80px;
+                @media (max-width: 1325px) {
+                    padding-right: 40px;
+                }
+                @media (max-width: $bp_desktopMedium) {
+                    padding-left: 40px;
+                }
+                @media (max-width: $bp_mobileLandscape) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                @media (max-width: $bp_mobile) {
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
+                
+            }
+        }
+        &.image-left {
+            .text-cell {
+                padding-left: 80px;
+                @media (max-width: $bp_desktopMedium) {
+                    padding-left: 40px;
+                }
+                @media (max-width: $bp_mobileLandscape) {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
+                @media (max-width: $bp_mobile) {
+                    padding-left: 24px;
+                    padding-right: 24px;
+                }
+                
+            }
+            .image-cell {
+                width: 811px;
+                @media (max-width: $bp_mobileMenuShift) {
+                    width: 100%;
+                }
+            }
+        }
+        @media (max-width: $bp_mobileMenuShift) {
+            > div {
+                display: block;
+            }
+        }
+        .text-cell {
+            @media (max-width: $bp_mobileMenuShift) {
+                padding-bottom: 30px;
+            }
+            @media (max-width: $bp_mobileLandscape) {
+                padding-left: 30px;
+                padding-right: 30px;
+            }
+            @media (max-width: $bp_mobile) {
+                padding-left: 24px;
+                padding-right: 24px;
+            }
+            .heading {
+                margin-bottom: 40px;
+                @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+                @media (max-width: $bp_mobileLandscape) {
+                    margin-bottom: 40px;
+                }
+            }
+            a {
+                display: inline-block;
+                text-decoration: none;
+                position: relative;
+                @include transition(0.35s);
+                @include typography(getFont(1), 25px, 33px, 500, inherit);
+                @media (max-width: $bp_mobileMenuShift) {
+                    @include typography(getFont(1), 20px, 26px, 500, inherit);
+                }
+                @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                    font-size: 35px;
+                    line-height: 46px;
+                }
+                &:hover {
+                    color: getColor(2) !important;
+                }
+                &::after {
+                    content: "";
+                    width: 100%;
+                    height: 1px;
+                    display: block;
+                    background: $darkOrange;
+                    margin-bottom: 25px;
+                    margin-top: 5px;
+                }
+            }
+        }
+        .image-cell {
+            img {
+                vertical-align: bottom;
+                max-width: 811px;
+                @media (max-width: $bp_mobileMenuShift) {
+                    margin-bottom: 30px;
+                    width: 100%;
+                    max-width: 100%;
+                }
+            }
+        }
+    }
+}

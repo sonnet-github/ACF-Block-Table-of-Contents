@@ -1,0 +1,24 @@
+{
+    "name": "acf/instagram-widget",
+    "title": "Instagram Widget",
+    "description": "Instagram Widget",
+    "category": "custom-layout",
+    "icon": "instagram",
+    "keywords": ["instagram", "widget"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "instagram-widget.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "instagram-widget/preview.jpg"
+            }
+        }
+    }
+}

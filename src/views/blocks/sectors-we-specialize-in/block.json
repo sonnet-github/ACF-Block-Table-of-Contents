@@ -1,0 +1,24 @@
+{
+    "name": "acf/sectors-we-specialize-in",
+    "title": "Sectors we specialize in banner",
+    "description": "Can pull content from services or manually input data",
+    "category": "custom-layout",
+    "icon": "align-full-width",
+    "keywords": ["sectors we specialize", "banner"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "sectors-we-specialize-in.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "sectors-we-specialize-in/preview.jpg"
+            }
+        }
+    }
+}

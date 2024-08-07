@@ -1,0 +1,68 @@
+.block--custom-layout__virtual-media-training{
+    position: relative;
+    background-color: $lightColor;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 90px 0 80px;
+    @media (min-width: $bp_mobileLandscape) {
+        height: 541px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: $bp_mobileLandscape) {
+        height: 671px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: $bp_mobileMedium) {
+        height: unset;
+        padding: 60px 0;
+    }
+    .left {
+        text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+    .container-block{
+        width: 100%;
+        max-width: 1152px; //60%
+        h4 {
+            margin-bottom: 50px;
+            @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                font-size: 40px;
+                line-height: 52px;
+            }
+            @media (max-width: $bp_mobile) {
+                margin-bottom: 30px;
+            }
+        }
+        h2 {
+            margin-bottom: 70px; //70px
+            max-width: 40%;
+            @media (max-width: $bp_mobileMenuShift) {
+                max-width: 57%;
+            }
+            @media (max-width: $bp_tabletPortrait2) {
+                max-width: 84%;
+            }
+            @media (max-width: $bp_mobile) {
+                max-width: 70%;
+                margin-bottom: 50px;
+            }
+            @media (max-width: $bp_mobileMedium) {
+                max-width: 100%;
+            }
+        }
+
+        .btn-default {
+            min-width: 268px;
+        }
+    }
+}

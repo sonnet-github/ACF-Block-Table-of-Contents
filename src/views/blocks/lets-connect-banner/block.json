@@ -1,0 +1,24 @@
+{
+    "name": "acf/lets-connect-banner",
+    "title": "Let's Connect",
+    "description": "Let's Connect Banner",
+    "category": "custom-layout",
+    "icon": "align-full-width",
+    "keywords": ["banner", "cta", "lets-connect"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "lets-connect-banner.php"
+    },  
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "lets-connect-banner/preview.jpg"
+            }
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "acf/two-column-wysiwyg",
+    "title": "Two Column RTE",
+    "description": "Theme styled Two Column WYSIWYG block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["two-column-wysiwyg", "text", "rich text", "two column", "rte"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "two-column-wysiwyg.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "two-column-wysiwyg/preview.jpg"
+            }
+        }
+    }
+}

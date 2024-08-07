@@ -1,0 +1,24 @@
+{
+    "name": "acf/our-management-team",
+    "title": "Our Management Team",
+    "description": "Our Management Team",
+    "category": "custom-layout",
+    "icon": "businesswoman",
+    "keywords": ["two-column", "our management team"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "our-management-team.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "our-management-team/preview.jpg"
+            }
+        }
+    }
+}

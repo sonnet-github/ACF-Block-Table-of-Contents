@@ -1,0 +1,176 @@
+.block--custom-layout__hero{
+    position: relative;
+    background-color: getColor(1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    @media (min-width: $bp_mobileLandscape) {
+        height: 624px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: $bp_mobileLandscape) {
+        height: 678px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    @media (max-width: $bp_mobileMedium) {
+        height: unset;
+        padding: 60px 0 115px;
+    }
+    .mobile-bg {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 0;
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+    &.contact-us {
+        .container-block {
+            .hp-content {
+                @include typography(getFont(1), 30px, 39px, 400, inherit);
+                margin-bottom: 15px;
+                max-width: 717px;
+                @media(max-width: $bp_mobile){
+                    font-size: 24px;
+                    line-height: 35px;
+                }
+            }
+        }
+    }
+    &.hero-pt {
+        .date {
+            text-align: left;
+            p {
+                text-transform: uppercase;
+                margin-bottom: 50px;
+                @include typography(getFont(1), 30px, 39px, 500, inherit);
+                @media (max-width: $bp_mobileMenuShift) {
+                    @include typography(getFont(1), 24px, 31.2px, 500, inherit);
+                }
+            }
+        }
+        .categories {
+            text-align: left;
+            text-transform: uppercase;
+            @include typography(getFont(1), 30px, 39px, 500, getColor(2));
+            @media (max-width: $bp_mobileMenuShift) {
+                @include typography(getFont(1), 24px, 31.2px, 500, getColor(2));
+            }
+            span {
+                color: $lightColor;
+            }
+        }
+        .container-block {
+            h1 {
+                text-transform: none;
+                margin-bottom: 55px;
+                @include typography(getFont(1), 60px, 78px, 800, inherit);
+                @media(max-width: $bp_mobileLandscape){
+                    font-size: 42px;
+                    line-height: 54.6px;
+                }
+            }
+        }
+    }
+    .left {
+        text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+    .container-block{
+        text-align: center;
+        color: $lightColor;
+        width: 100%; 
+
+        position: relative;
+        &.half {
+            h1, .hp-content {
+                @media (min-width: $bp_tabletLandscape) {
+                    max-width: 58%;
+                }
+            }
+
+        }
+        &.full {
+            // max-width: $containerFullWidth;
+            h1, .hp-content {
+                max-width: 100%;
+            }
+        }
+        h1 {
+            text-transform: uppercase;
+            &.heading-bigger {
+                margin-bottom: 75px;
+                @media (max-width: $bp_mobileLandscape) {
+                    margin-bottom: 30px;
+                }
+            }
+        }
+        h1, .hp-content {
+            max-width: 49%;
+            @media (max-width: $bp_desktopMedium) {
+                max-width: 59%;
+            }
+            @media (max-width: $bp_mobileMenuShift) {
+                max-width: 79%;
+            }
+            @media (max-width: $bp_tabletLandscape) {
+                max-width: 74%;
+            }
+            // @media (max-width: $bp_tabletPortrait2) {
+            //     max-width: 65%;
+            // }
+            @media (max-width: $bp_mobileLandscape) {
+                max-width: 90%;
+                br {
+                    display: none;
+                }
+            }
+            // @media (max-width: $bp_mobile) {
+            //     max-width: 80%;
+            // }
+            @media (max-width: $bp_mobileMedium) {
+                max-width: 100%;
+            }
+        }
+
+        .hp-content {
+            @include typography(getFont(1), 24px, 31.2px, 400, inherit);
+        }
+
+        .btn-default {
+            margin-top: 25px;
+        }
+
+        hr {
+            border: none;
+            height: 6px;
+            background-color: getColor(3);
+            max-width: 536px;
+            margin: 40px auto 50px 0;
+            @media (max-width: $bp_tabletLandscape) {
+                max-width: 50%;
+            }
+            @media (max-width: $bp_tabletPortrait2) {
+                max-width: 60%;
+            }
+            @media (max-width: $bp_mobile) {
+                max-width: 80%;
+            }
+            @media (max-width: $bp_mobileMedium) {
+                max-width: 100%;
+            }
+        }
+    }
+}

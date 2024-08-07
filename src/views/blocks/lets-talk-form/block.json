@@ -1,0 +1,24 @@
+{
+    "name": "acf/lets-talk-form",
+    "title": "Let's Talk Form",
+    "description": "Let's Talk Form",
+    "category": "custom-layout",
+    "icon": "feedback",
+    "keywords": ["form", "lets-talk"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "lets-talk-form.php"
+    },  
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "lets-talk-form/preview.jpg"
+            }
+        }
+    }
+}

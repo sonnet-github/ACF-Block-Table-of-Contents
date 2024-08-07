@@ -1,0 +1,24 @@
+{
+    "name": "acf/three-tiles",
+    "title": "Three Tiles widget",
+    "description": "Display up to 3 tiles",
+    "category": "custom-layout",
+    "icon": "table-row-before",
+    "keywords": ["three", "widget", "tiles"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "three-tiles.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "three-tiles/preview.jpg"
+            }
+        }
+    }
+}

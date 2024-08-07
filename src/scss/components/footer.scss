@@ -1,0 +1,259 @@
+.page-footer{
+    background-color: getColor(1);
+    color: $lightColor;
+
+    &.page-footer--alt{
+        background-color: $lightColor;
+        color: getColor(1);
+
+        .pf-upper .git-details .tb-c-wr a, 
+        .pf-upper .git-details .tb-c-wr a{
+            color: getColor(1);
+
+            &:hover,
+            &:focus{
+                color: getColor(5);
+            }
+        }
+    }
+
+    .pf-upper{
+        padding: 0 0;
+        .git-heading{
+            padding: 80px 0px 40px;
+            text-align: center;
+            border-bottom: 1px solid getColor(3);
+        }
+        h3{
+            font-size: 66px;
+            line-height: 1.15em;
+            margin: 0 auto 18px;
+            padding: 0 20px;
+            text-transform: uppercase;
+
+            @media(max-width: 979px){
+                font-size: 40px;
+            }
+        }
+        h5{
+            font-size: 16px;
+            line-height: 1.33em;
+            max-width: 500px;
+            margin: 0 auto 20px;
+            padding: 0 20px;
+
+            @media(max-width: 979px){
+                font-size: 14px;
+                max-width: 342px;
+            }
+        }
+
+        .git-details{
+            border-bottom: 1px solid getColor(3);
+
+            .tb-c-wr{
+                text-align: center;
+                width: 30%;
+
+                &.spacer-cell{
+                    width: 5%;
+                }
+
+                a{
+                    text-decoration: none;
+                    display: block;
+                    padding: 118px 20px;
+                    color: $lightColor;
+                    @include transition(0.45s);
+
+                    &:hover,
+                    &:focus{
+                        color: getColor(5);
+                    }
+                }
+                i{
+                    display: block;
+                    margin: 0 auto 26px;
+                    font-size: 36px;
+                }
+                img{
+                    display: block;
+                    width: auto;
+                    height: 40px;
+                    margin: 0 auto 26px;
+                }
+                span{
+                    @include typography(getFont(1), 20px, 1.15em, 400, inherit);
+                    letter-spacing: 0.5px;
+                    display: inline-block;
+                    width: 100%;
+
+                    @media(max-width: 400px){
+                        font-size: 16px;
+                    }
+                }
+
+                &.email-cell{
+                    border-left: 1px solid getColor(3);
+                    border-right: 1px solid getColor(3);
+
+                    span{
+                        text-decoration: underline;
+                    }
+                }
+
+                @media(max-width: 1390px){
+                    &{
+                        width: 33.33%;
+                    }
+                    &.spacer-cell{
+                        display: none;
+                    }
+                }
+
+                @media(max-width: 1200px){
+                    &{
+                        width: 25%;
+                    }
+                    &.email-cell{
+                        width: 50%;
+                    }
+                    &.spacer-cell{
+                        display: none;
+                    }
+                }
+            }
+
+            @media(max-width: 1080px){
+                .tb-wr,
+                .tb-c-wr{
+                    display: block;
+                    width: 100% !important;
+
+                    &.phone-cell{
+                        border-bottom: 1px solid getColor(3);
+                    }
+
+                    &.email-cell{
+                        border-left: 0;
+                        border-right: 0;
+                        border-bottom: 1px solid getColor(3);
+                    }
+
+                    a,
+                    &.location-cell{
+                        padding: 60px 20px;
+                    }
+                }
+            }
+        }
+    }
+
+    .pf-lower{
+        padding: 40px 60px;
+
+        @media(max-width: $bp_mobile){
+            padding: 40px 24px;
+        }
+
+        img{
+            max-width: 100%;
+        }
+        p, img{
+            vertical-align: middle;
+        }
+        p{
+            line-height: 1.65em;
+            margin-bottom: 0;
+
+            @media(max-width: $bp_mobile){
+                font-size: 12px;
+            }
+        }
+
+        .tb-c-wr{
+            vertical-align: middle;
+        }
+
+        .copyright-cell,
+        .content-cell{
+            width: 50%;
+        }
+
+        .footer-logo-wrap{
+            width: 42px;
+        }
+
+        .footer-copy-wrap{
+            padding-left: 39px;
+        }
+
+        .copyright-cell{
+            text-align: right;
+
+            .tb-c-wr{
+                text-align: right;
+
+                &:first-child{
+                    padding-right: 5px;
+                }
+
+                &.branding-cell{
+                    width: 210px;
+                }
+            }
+
+            img{
+                position: relative;
+                top: -2px;
+                height: 1em;
+                width: auto;
+                margin-left: 3px;
+            }
+        }
+
+        @media(max-width: 1080px){
+            & > .tb-wr,
+            .copyright-cell,
+            .content-cell{
+                display: block;
+                width: 100%;
+            }
+            .content-cell{
+                margin-bottom: 37px;
+
+                .footer-copy-wrap{
+                    text-align: right;
+                    padding-left: 10px;
+                }
+            }
+            .copyright-cell{
+                .tb-c-wr{
+                    text-align: right;
+    
+                    &:first-child{
+                        width: 50%;
+                        padding-right: 5px;
+                        text-align: left;
+                    }
+    
+                    &.branding-cell{
+                        width: 50%;
+                    }
+                }
+            }
+        }
+
+        @media(max-width: $bp_mobile){
+            .content-cell{
+                .footer-copy-wrap{
+                    p{
+                        display: inline-block;
+                        max-width: 261px;
+                    }
+                }
+            }
+        }
+    }
+
+}

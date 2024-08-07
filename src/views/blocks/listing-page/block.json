@@ -1,0 +1,24 @@
+{
+    "name": "acf/listing-page",
+    "title": "Listing Page Template",
+    "description": "Displays list of posts with filtered category options. Also with mailing form component.",
+    "category": "custom-layout",
+    "icon": "list-view",
+    "keywords": ["listing page", "blog", "newswire", "mailing list", "widget"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "listing-page.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "listing-page/preview.jpg"
+            }
+        }
+    }
+}

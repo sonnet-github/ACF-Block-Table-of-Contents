@@ -1,0 +1,24 @@
+{
+    "name": "acf/latest-updates",
+    "title": "Latest Updates",
+    "description": "Automatically pulls five latest blogs or newswire. Note: Uses external carousel js plugin.",
+    "category": "custom-layout",
+    "icon": "testimonial",
+    "keywords": ["latest updates", "slider", "carousel", "widget"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "latest-updates.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "latest-updates/preview.jpg"
+            }
+        }
+    }
+}

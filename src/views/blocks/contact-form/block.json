@@ -1,0 +1,24 @@
+{
+    "name": "acf/contact-form",
+    "title": "Contact Form",
+    "description": "Contact form with heading text",
+    "category": "custom-layout",
+    "icon": "forms",
+    "keywords": ["contact form"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "contact-form.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "contact-form/preview.jpg"
+            }
+        }
+    }
+}

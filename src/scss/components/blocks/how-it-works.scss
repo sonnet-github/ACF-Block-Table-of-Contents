@@ -1,0 +1,117 @@
+.block--custom-layout__how-it-works {
+    padding: 70px 0 105px;
+    text-align: center;
+    &.wo-cta {
+        padding-bottom: 0;
+    }
+    @media (max-width: $bp_tabletPortrait) {
+        padding: 75px 0 85px;
+    }
+    @media (max-width: $bp_mobile) {
+        padding: 55px 0 65px;
+    }
+    .left {
+        text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+
+    &.layout-one {
+        .container-block {
+            @media (min-width: $bp_desktop) {
+                padding-left: 18px;
+            }
+        }
+    }
+    h3 {
+        font-weight: 500;
+        margin-bottom: 65px;        
+        @media (max-width: $bp_tabletPortrait) {
+            margin-bottom: 65px;
+        }
+        @media (max-width: $bp_mobile) {
+            margin-bottom: 35px;
+        }
+        &.heading {
+            margin-bottom: 20px;
+            @media (max-width: $bp_mobileLandscape) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .subtitle {
+        margin-bottom: 85px;        
+        @media (max-width: $bp_tabletPortrait) {
+            margin-bottom: 65px;
+        }
+        @media (max-width: $bp_mobile) {
+            margin-bottom: 35px;
+        }
+    }
+    .container-block {
+        @media (min-width: $bp_desktop) {
+            padding-left: 20px;
+        }
+    }
+    .tiles-grid {
+        margin-bottom: 110px;
+        text-align: left;
+        @media (min-width: $bp_desktop) {
+            position: relative;
+            left: 30px;
+        }
+        @media (max-width: $bp_tabletPortrait) {
+            margin-bottom: 65px;
+        }
+        .tile-item {
+            table-layout: fixed;
+            margin-bottom: 60px;
+            &.right {
+                @media (max-width: $bp_tabletPortrait3) {
+                    display: flex;
+                    flex-direction: column-reverse;
+                }
+            }
+            .text-cell {
+                padding-left: 30px;
+                @media (max-width: $bp_tabletPortrait) {
+                    padding-left: 0;
+                }
+            }
+            .tb-c-wr {
+                @media (max-width: $bp_tabletPortrait) {
+                    display: block;
+                }
+            }
+        }
+        img {
+            @media (max-width: $bp_tabletPortrait) {
+                margin-bottom: 25px;
+            }
+        }
+        h4 {
+            @include typography(getFont(1), 25px, 33px, 500, $textColor);
+            margin-bottom: 10px;
+            max-width: 725px;
+            @media (max-width: $bp_tabletPortrait) {
+                margin-bottom: 15px;
+            }
+            @media (max-width: $bp_mobile) {
+                @include typography(getFont(1), 20px, 26px, 500, $textColor);
+            }
+        }
+        p {
+            // @include typography(getFont(1), 15px, 19.8px, 300, $textColor);
+            max-width: 725px;
+            margin-bottom: 15px;
+        }
+    }
+
+    .btn-default {
+        min-width: 250px;
+    }
+}

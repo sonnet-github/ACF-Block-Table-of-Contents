@@ -1,0 +1,24 @@
+{
+    "name": "acf/marketing-events",
+    "title": "Marketing Events Sign Up",
+    "description": "Marketing Events Sign Up Widget",
+    "category": "custom-layout",
+    "icon": "feedback",
+    "keywords": ["marketing", "events", "form", "widget", "sign up"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "marketing-events.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "marketing-events/preview.jpg"
+            }
+        }
+    }
+}

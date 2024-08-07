@@ -1,0 +1,145 @@
+.block--custom-layout__sectors-we-serve {
+    text-align: center;
+    padding: 80px 0 125px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media (max-width: $bp_mobile) {
+        padding-bottom: 80px;
+    }
+    .left {
+        text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+    .container-block {
+        max-width: 1622px;
+    }
+
+    h3 {
+        margin-bottom: 0;
+        @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+            font-size: 50px;
+            line-height: 65px;
+        }
+        &.heading {
+            margin-bottom: 20px;
+            @media (max-width: $bp_mobileLandscape) {
+                margin-bottom: 10px;
+            }
+        }
+    }
+    .subtitle {
+        margin-bottom: 0;
+    }
+    .tiles-grid {
+        margin-top: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        &.tiles-center {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            grid-gap: 0;
+            > div {
+                flex: 0 0 29%;
+                margin: 0 25px;
+                @media (max-width: $bp_mobileMenuShift) {
+                    margin: 15px;
+                }
+                @media (max-width: $bp_tabletPortrait2) {
+                    flex: 0 0 45%;
+                    margin: 21px 15px;
+                }
+                @media (max-width: $bp_mobileLandscape) {
+                    flex: 0 0 100%;
+                    
+                }
+                @media (max-width: $bp_mobile) {
+                    margin: 35px;
+                }
+            }
+        }
+        .tile-item {
+            box-shadow: 15px 10px 30px $cardShadow;
+            padding: 25px 23px; 
+            position: relative; 
+            flex: 0 0 386px;
+            margin: 47.5px;
+            @media (max-width: $bp_desktopMedium) {
+                flex: 0 0 30%;
+                margin: 40px 20px;
+            }
+            @media (max-width: $bp_mobileMenuShift) {
+                flex: 0 0 45%;
+                margin: 30px 10px;
+            }
+            @media (max-width: $bp_mobileLandscape) {
+                flex: 1 0 100%;
+                margin: 25px 0;
+            }
+            &:nth-child(odd) {
+                .color-block {
+                    background-color: getColor(2);
+                }
+            }
+            &:nth-child(even) {
+                .color-block {
+                    background-color: getColor(3);
+                }
+            }
+            .color-block {
+                padding: 9px;
+                margin-bottom: 35px;
+                @media (max-width: $bp_mobileMenuShift) {
+                    padding: 11px;
+                    margin-bottom: 45px;
+                }
+            }
+            img {
+                vertical-align: bottom;
+                width: 100%;
+            }
+            a {
+                text-decoration: none;
+                display: block;
+                width: 100%;
+                height: 100%;
+                @include transition(0.35s);
+                &:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
+        h4 {
+            color: getColor(2);
+            margin-bottom: 5px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 89%;
+            @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                font-size: 40px;
+                line-height: 52px;
+                max-width: 100%;
+            }
+            @media (max-width: $bp_tabletLandscape) {
+                max-width: 89%;
+            }
+        }
+        p {
+            color: $textDark;
+            margin-bottom: 0;
+        }
+    }
+
+    .cta-wrap {
+        margin-top: 55px;
+        .btn-default {
+            min-width: 250px;
+        }
+    }
+}

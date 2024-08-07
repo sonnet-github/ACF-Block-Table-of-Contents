@@ -1,0 +1,24 @@
+{
+    "name": "acf/media-directory",
+    "title": "Media Directory",
+    "description": "Media Directory Component. Content will automatically be pulled from Media Directory posts and categories.",
+    "category": "custom-layout",
+    "icon": "admin-media",
+    "keywords": ["media directory", "tabs", "details", "sidebar"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "media-directory.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "media-directory/preview.jpg"
+            }
+        }
+    }
+}

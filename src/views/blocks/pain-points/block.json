@@ -1,0 +1,24 @@
+{
+    "name": "acf/pain-points",
+    "title": "Pain Points",
+    "description": "Title with two column pain points",
+    "category": "custom-layout",
+    "icon": "editor-ul",
+    "keywords": ["two-column", "pain points", "point"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "pain-points.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "pain-points/preview.jpg"
+            }
+        }
+    }
+}

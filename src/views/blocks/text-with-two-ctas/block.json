@@ -1,0 +1,24 @@
+{
+    "name": "acf/text-with-two-ctas",
+    "title": "Text banner with CTAs",
+    "description": "Text banner with two CTAs",
+    "category": "custom-layout",
+    "icon": "columns",
+    "keywords": ["banner", "cta", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "text-with-two-ctas.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "text-with-two-ctas/preview.jpg"
+            }
+        }
+    }
+}

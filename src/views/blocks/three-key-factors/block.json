@@ -1,0 +1,24 @@
+{
+    "name": "acf/three-key-factors",
+    "title": "Three Key Factors",
+    "description": "Three Key Factors Template",
+    "category": "custom-layout",
+    "icon": "table-row-before",
+    "keywords": ["three column", "key", "factors"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "three-key-factors.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "three-key-factors/preview.jpg"
+            }
+        }
+    }
+}

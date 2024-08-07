@@ -1,0 +1,24 @@
+{
+    "name": "acf/wysiwyg",
+    "title": "Full width RTE",
+    "description": "Theme styled WYSIWYG block.",
+    "category": "custom-layout",
+    "icon": "text",
+    "keywords": ["wysiwyg", "text", "rich text", "full width", "rte"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "wysiwyg.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "wysiwyg/preview.jpg"
+            }
+        }
+    }
+}

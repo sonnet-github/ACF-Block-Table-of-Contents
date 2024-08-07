@@ -1,0 +1,24 @@
+{
+    "name": "acf/three-col-icon-text",
+    "title": "Three column icon with description",
+    "description": "Three Columns with icons, text, and description",
+    "category": "custom-layout",
+    "icon": "table-row-before",
+    "keywords": ["three column", "cta", "tiles", "icon", "text", "description"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "three-col-icon-text.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "three-col-icon-text/preview.jpg"
+            }
+        }
+    }
+}

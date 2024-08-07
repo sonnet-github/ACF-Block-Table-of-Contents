@@ -1,0 +1,24 @@
+{
+    "name": "acf/testimonials",
+    "title": "Testimonials",
+    "description": "Testimonials widget block. Automatically pulls testimonials from a centralized listing set in theme settings (Theme settings > Testimonials). Note: Uses external carousel js plugin.",
+    "category": "custom-layout",
+    "icon": "testimonial",
+    "keywords": ["testimonials", "slider", "quote"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "testimonials.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "testimonials/preview.jpg"
+            }
+        }
+    }
+}

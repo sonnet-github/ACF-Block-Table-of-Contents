@@ -1,0 +1,24 @@
+{
+    "name": "acf/three-col-card",
+    "title": "Three column card with description",
+    "description": "Three column card with description",
+    "category": "custom-layout",
+    "icon": "index-card",
+    "keywords": ["three", "card", "tiles", "description"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "three-col-card.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "three-col-card/preview.jpg"
+            }
+        }
+    }
+}

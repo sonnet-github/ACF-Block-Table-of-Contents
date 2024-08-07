@@ -1,0 +1,24 @@
+{
+    "name": "acf/two-col-image-text-container",
+    "title": "Two-column image/text with Container",
+    "description": "Two-column image/text with Container",
+    "category": "custom-layout",
+    "icon": "columns",
+    "keywords": ["two column", "image", "text", "container", "brand presence"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "two-col-image-text-container.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "two-col-image-text-container/preview.jpg"
+            }
+        }
+    }
+}

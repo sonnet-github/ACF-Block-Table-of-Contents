@@ -1,0 +1,143 @@
+.block--custom-layout__full-rte-bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 556px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    @media (max-width: $bp_mobileMenuShift) {
+        background-image: none !important;
+        height: unset;
+        display: block;
+    }
+    .left {
+        text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+    img {
+        width: 100%;
+    }
+    .mobile-bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
+    .content-wrap {
+        // position: relative;
+        .content-item {
+            h4 {
+                font-weight: 500;
+                margin-bottom: 20px;
+                @media (max-width: $bp_mobileMenuShift) {
+                    margin-bottom: 25px;
+                }
+                @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                    font-size: 40px;
+                    line-height: 52px;
+                }
+                &.heading {
+                    margin-bottom: 20px;
+                    @media (max-width: $bp_mobileLandscape) {
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+            .subtitle {
+                margin-bottom: 20px;
+                @media (max-width: $bp_mobileMenuShift) {
+                    margin-bottom: 50px;
+                }
+            }
+            ul {
+                list-style-position: outside;
+                padding-left: 25px;
+            }
+            .description {
+                max-width: 726px;
+                @media (max-width: $bp_mobileBig) {
+                    max-width: 100%;
+                }
+                p, li {
+                    margin-bottom: 15px;
+                    @media (max-width: $bp_mobileMenuShift) {
+                        margin-bottom: 25px;
+                    }
+                    @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                        font-size: 35px;
+                        line-height: 46px;
+                    }
+                }
+            }
+        }
+        &.half {
+            width: 50%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            align-items: center;
+            @media (max-width: $bp_mobileMenuShift) {
+                width: 100%;
+                position: unset;
+                display: block;
+            }
+            &.left {
+                left: 0;
+                .content-item {
+                    padding-right: 70px;
+                    padding-left: 20px;
+                    @media (max-width: $bp_mobileMenuShift) {
+                        padding-right: 0;
+                        padding-left: 0;
+                    }
+                }
+            }
+            &.right {
+                right: 0;
+                .content-item {
+                    padding-left: 70px;
+                    padding-right: 20px;
+                    @media (max-width: $bp_mobileMenuShift) {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+        &.full {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: $bp_mobileMenuShift) {
+                position: unset;
+                display: block;
+            }
+        }
+        @media (max-width: $bp_mobileMenuShift) {
+            padding: 80px 60px;
+        }
+        @media (max-width: $bp_mobile) {
+            padding: 40px 24px;
+        }
+        .cta-container {
+            padding-top: 30px;
+        }
+    }
+
+}

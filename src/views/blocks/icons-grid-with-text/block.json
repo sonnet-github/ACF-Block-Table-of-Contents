@@ -1,0 +1,24 @@
+{
+    "name": "acf/icons-grid-with-text",
+    "title": "Icons Grid With Text",
+    "description": "Four Columns with Icon and Text, can choose if pulling from Services posts or manually input data",
+    "category": "custom-layout",
+    "icon": "screenoptions",
+    "keywords": ["icons", "grid", "tiles", "text", "services"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "icons-grid-with-text.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "icons-grid-with-text/preview.jpg"
+            }
+        }
+    }
+}

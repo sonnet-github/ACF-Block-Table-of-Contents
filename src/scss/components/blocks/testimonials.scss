@@ -1,0 +1,91 @@
+.block--custom-layout__testimonials {
+    text-align: center;
+    padding: 60px 0;
+    overflow-x: hidden;
+    h3 {
+        // @media (max-width: $bp_mobile) {
+        //     font-size: 40px;
+        //     line-height: 41px;
+        // }
+        @media (max-width: $bp_mobileMedium) {
+            font-size: 24px;
+            line-height: 35px;
+        }
+        &.heading {
+            margin-bottom: 15px;
+        }
+    }
+    .description {
+        margin-bottom: 30px;
+    }
+    .testimonial-slider {
+        .slide-item {
+            border: 3px solid getColor(5);
+            padding: 25px 25px 45px;
+            max-width: 96.5%;
+            margin: 0 auto;
+            @media (max-width: 1800px) {
+                max-width: 80.5%;
+            }
+            @media (max-width: $bp_tabletLandscape) {
+                max-width: 100%;
+            }
+            @media (max-width: $bp_mobileMedium) {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+            img {
+                max-width: 192px;
+                margin: 0 auto 30px;
+            }
+            p {
+                @include typography(getFont(1), 24px, 35px, 300, getColor(6));
+                max-width: 85%;
+                margin: 0 auto;
+                @media (max-width: $bp_mobile) {
+                    max-width: 100%;
+                }
+                // @media (max-width: $bp_mobileMedium) {
+                //     font-size: 25px;
+                //     line-height: 36px;
+                // }
+                strong {
+                    font-weight: 600;
+                }
+            }
+        }
+        .owl-nav {
+            position: absolute;
+            top: 41%;
+            width: 100%;
+            @media (max-width: $bp_tabletLandscape) {
+                position: unset;
+                margin-top: 30px;
+            }
+            button {
+                position: absolute;
+                @media (max-width: $bp_tabletLandscape) {
+                    position: unset;
+                }
+                &.owl-prev {
+                    left: -120px;
+                    @media (max-width: 1800px) {
+                        left: 0;
+                    }
+                    @media (max-width: $bp_tabletLandscape) {
+                        margin-right: 15px;
+                    }
+                }
+                &.owl-next {
+                    right: -120px;
+                    @media (max-width: 1800px) {
+                        right: 0;
+                    }
+                }
+            }
+            img {
+                max-width: 71px;
+            }
+        }
+    }
+}

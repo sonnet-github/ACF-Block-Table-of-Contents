@@ -1,0 +1,100 @@
+.block--custom-layout__logo-slider {
+    text-align: center;
+    padding: 90px 0 115px;
+    overflow-x: hidden;
+    @media (max-width: $bp_mobileLandscape) {
+        padding: 75px 0;
+    }
+    .left {
+        text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+    h3 {
+        margin-bottom: 80px;
+        @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+            font-size: 50px;
+            line-height: 65px;
+        }
+        @media (max-width: $bp_mobileLandscape) {
+            margin-bottom: 40px;
+        }
+        &.heading {
+            margin-bottom: 15px;
+        }
+    }
+    .description {
+        margin-bottom: 80px;
+        @media (max-width: $bp_mobileLandscape) {
+            margin-bottom: 40px;
+        }
+    }
+    .content-wrap {
+        max-width: 83.8%;
+        margin: 0 auto;
+    }
+    .logo-slider {
+        .owl-stage {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width: $bp_tabletLandscape) {
+                display: block;
+            }
+        }
+        .slide-item {
+            text-align: center;
+            img {
+                width: auto;
+                vertical-align: middle;
+                margin: 0 auto;
+            }
+        }
+    }
+    .owl-nav {
+        &.disabled {
+            display: block;
+        }
+        position: absolute;
+        top: 50%; //12%
+        width: 100%;
+        transform: translateY(-50%);
+        @media (max-width: $bp_mobile) {
+            top: 45%;
+        }
+        @media (max-width: $bp_mobileMedium) {
+            position: unset;
+            margin-top: 50px;
+        }
+        button {
+            position: absolute;
+            @media (max-width: $bp_mobileMedium) {
+                position: unset;
+            }
+            &.owl-prev {
+                left: -19%;
+                @media (max-width: 1800px) {
+                    left: -9.5%;
+                }
+                @media (max-width: $bp_mobileMedium) {
+                    margin-right: 50px;
+                }
+            }
+            &.owl-next {
+                right: -19%;
+                @media (max-width: 1800px) {
+                    right: -9.5%;
+                }
+            }
+        }
+        img {
+            max-width: 23.92px;
+            width: 23.92px;
+            height: 23.92px;
+        }
+    }
+}

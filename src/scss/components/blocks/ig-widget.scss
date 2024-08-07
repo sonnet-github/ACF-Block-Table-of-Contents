@@ -1,0 +1,79 @@
+.block--custom-layout__ig-widget{
+    padding: 80px 0;
+    color: $textColor;
+    @media (max-width: $bp_mobileMenuShift) {
+       padding: 95px 0 5px; //75px
+    }
+
+    .ig-link {
+        @include typography(getFont(1), 25px, 33px, 400, getColor(1));
+        @media (max-width: $bp_mobile) {
+            @include typography(getFont(1), 20px, 26px, 400, getColor(1));
+        }
+        color: getColor(1);
+        // @include typography(getFont(1), 15px, 19.8px, 400, getColor(1));
+        @include transition(0.35s);
+        margin-bottom: 60px;
+        text-decoration: none;
+        &:hover {
+            color: getColor(3);
+        }
+
+    }
+
+    h3 {
+        margin-bottom: 15px; //30px
+        @media (max-width: $bp_mobileMenuShift) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .left {
+        text-align: left;
+    }
+
+    .right {
+        text-align: right;
+    }
+
+    .ig-container {
+        padding-top: 25px;
+        #sb_instagram.sbi_col_4 #sbi_images .sbi_item {
+            @media (max-width: $bp_mobileBig) {
+                width: 440px !important;
+                height: 440px !important;
+                padding: 0 !important;
+                margin: 20px !important;
+            }
+            @media (max-width: $bp_tabletLandscape) {
+                padding: 20px !important;
+                margin: 0 !important;
+            }
+            @media (max-width: $bp_tabletLandscape) and (min-width: $bp_mobile) {
+                width: 50% !important;
+                height: auto !important;
+            }
+            @media (max-width: $bp_mobileLandscape) {
+                padding: 15px !important;
+            }
+        }
+        #sb_instagram .sbi_photo {
+            border: 1px solid #707070;
+        }
+        #sbi_images {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        #sb_instagram #sbi_images .sbi_item {
+            padding: 20px !important;
+            @media (max-width: $bp_mobileLandscape) {
+                padding: 15px !important;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,133 @@
+.block--custom-layout__three-col-icon-text {
+    &.layout-spaced {
+        padding: 65px 0 50px;
+        .tiles-grid {
+            @media (min-width: $bp_mobileLandscape) {
+                margin-bottom: 35px;
+                grid-gap: 90px 141px;
+            }
+        }
+    }
+    .container-block {
+        max-width: 1519px;
+        hr {
+            border: none;
+            height: 3px;
+            background-color: $lineColor;
+            margin: 0;
+        }
+        .left {
+            text-align: left;
+        }
+        .center {
+            text-align: center;
+        }
+        .right {
+            text-align: right;
+        }
+        h4, .subtitle {
+            &.left {
+                text-align: left;
+            }
+            &.center {
+                text-align: center;
+            }
+            &.right {
+                text-align: right;
+            }
+        }
+        h4 {
+            margin-top: 45px;
+            margin-bottom: 35px;
+            @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                font-size: 40px;
+                line-height: 52px;
+            }
+            @media (max-width: $bp_mobileLandscape) {
+                margin-bottom: 20px;
+            }
+            &.heading {
+                margin-bottom: 20px;
+                @media (max-width: $bp_mobileLandscape) {
+                    margin-bottom: 10px;
+                }
+            }
+        }
+        .subtitle {
+            margin-bottom: 60px;
+            p {
+                margin-bottom: 20px;
+                @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                    font-size: 35px;
+                    line-height: 46px;
+                }
+            }
+        }
+    }
+    .tiles-grid {
+        margin-bottom: 55px;
+        text-align: left;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 90px;
+        @media (max-width: $bp_tabletLandscape) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @media (max-width: $bp_mobileLandscape) {
+            grid-template-columns: repeat(1, 1fr);
+            text-align: center;
+            grid-gap: 70px 20px;
+            margin-bottom: 70px;
+            .tile-item {
+                text-align: left;
+            }
+        }
+        img {
+            margin-bottom: 50px;
+            @media (max-width: $bp_mobileLandscape) {
+                margin-bottom: 25px;
+            }
+        }
+        h4 {
+            margin-top: 0;
+            margin-bottom: 15px;
+            max-width: 350px;
+            @media (max-width: $bp_mobileLandscape) {
+                max-width: 95%;
+            }
+            @media (max-width: $bp_mobile) {
+                margin-bottom: 10px;
+            }
+            &.center {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+        .desc {
+            ul, ol {
+                list-style-position: outside;
+                margin-top: 10px;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+            p {
+                &.centered{
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+                @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                    font-size: 35px;
+                    line-height: 46px;
+                }
+            }
+        }
+
+    }
+    .cta-wrap {
+        margin-top: 10px;
+        .btn-default {
+            min-width: 238px;
+        }
+    }
+}

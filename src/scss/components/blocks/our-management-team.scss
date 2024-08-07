@@ -1,0 +1,206 @@
+.block--custom-layout__our-management-team {
+    padding: 80px 0 85px;
+    @media (max-width: $bp_mobileMenuShift) {
+        padding: 75px 0 70px;
+    }
+    .left {
+        text-align: left;
+    }
+    .center {
+        text-align: center;
+    }
+    .right {
+        text-align: right;
+    }
+    h3 {
+        margin-bottom: 65px;
+        @media (max-width: $bp_mobileMenuShift) {
+            margin-bottom: 50px;
+            @include typography(getFont(1), 30px, 39px, 600, inherit);
+        }
+        @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+            font-size: 50px;
+            line-height: 65px;
+        }
+        &.heading {
+            margin-bottom: 20px;
+        }
+    }
+    .subtitle {
+        margin-bottom: 70px;
+        @media (max-width: $bp_mobileMenuShift) {
+            margin-bottom: 50px;
+        }
+    }
+
+    .line-left {
+        hr {
+            margin-left: 0;
+        }
+    }
+    .line-center {
+        hr {
+            margin: 0 auto;
+        }
+    }
+    .line-right {
+        hr {
+            margin-right: 0;
+        }
+    }
+
+    hr {
+        border: none;
+        height: 7px;
+        margin-bottom: 30px;
+        max-width: 287.74px;
+        @media (max-width: $bp_mobileMenuShift) {
+            margin-bottom: 35px;
+            margin-left: auto !important;
+            margin-right: auto !important;
+        }
+    }
+    .content-wrap {
+        .content-item {
+            &:first-child {
+                margin-bottom: 90px;
+                @media (max-width: $bp_mobileMenuShift) {
+                    margin-bottom: 45px;
+                }
+            }
+            &.image-right {
+                .tb-wr {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: space-between;
+                    flex-direction: row-reverse;
+                    @media (max-width: $bp_mobileMenuShift) {
+                        display: block;
+                    }
+                    .text-cell {
+                        flex: 1 0 70%;
+                        padding-right: 95px;
+                        padding-left: 0;
+                        @media (max-width: $bp_desktop) {
+                            flex: 1 0 50%;
+                            padding-right: 0;
+                            .description {
+                                max-width: 90%;
+                            }
+                        }
+                        .description {
+                            @media (max-width: $bp_mobileMenuShift) {
+                                max-width: 63%;
+                            }
+                            @media (max-width: $bp_tabletPortrait2) {
+                                max-width: 90%;
+                            }
+                            @media (max-width: $bp_mobile) {
+                                max-width: 100%;
+                            }
+                        }
+                    }
+                    .image-cell {
+                        flex: 1 0 30%;
+                        @media (max-width: $bp_desktop) {
+                            flex: 1 0 50%;
+                        }
+                        @media (min-width: $bp_mobileMenuShift) {
+                            text-align: right;
+                        }
+                    }
+                    > div {
+                        @media (max-width: $bp_mobileMenuShift) {
+                            display: block;
+                        }
+                    }
+                }
+            }
+            .tb-wr {
+                .tb-c-wr {
+                    @media (max-width: $bp_mobileMenuShift) {
+                        display: block;
+                    }
+                }
+                .image-cell {
+                    @media (max-width: $bp_mobileMenuShift) {
+                        text-align: center;
+                    }
+                    img {
+                        max-width: 449px;
+                        box-shadow: 15px 10px 30px $cardShadow;
+                        @media (max-width: $bp_mobileMenuShift) {
+                            margin-bottom: 55px;
+                            max-width: 615px;
+                            width: 100%;
+                        }
+                        @media (max-width: $bp_mobileLandscape) {
+                            margin-bottom: 35px;
+                        }
+                    }
+                }
+                .text-cell {
+                    padding-left: 95px;
+                    @media (max-width: $bp_mobileMenuShift) {
+                        padding-left: 0;
+                    }
+                    * {
+                        @media (max-width: $bp_mobileMenuShift) {
+                            text-align: center !important;
+                        }
+                    }
+                    .name {
+                        margin-bottom: 5px;
+                        @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                            font-size: 40px;
+                            line-height: 52px;
+                        }
+                        @media (max-width: $bp_mobileMenuShift) {
+                            margin-bottom: 10px;
+                        }
+                        @media (max-width: $bp_mobileLandscape) {
+                            margin-bottom: 0;
+                        }
+                    }
+                    .position {
+                        margin-bottom: 15px;
+                        @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                            font-size: 40px;
+                            line-height: 52px;
+                        }
+                        @media (max-width: $bp_mobileMenuShift) {
+                            margin-bottom: 40px;
+                        }
+                        @media (max-width: $bp_mobileLandscape) {
+                            margin-bottom: 30px;
+                        }
+                    }
+                    .description {
+                        max-width: 95%;
+                        p {
+                            @media (max-width: $bp_mobileBig) and (min-width: $bp_mobile) {
+                                font-size: 35px;
+                                line-height: 46px;
+                            }
+                        }
+                        @media (max-width: $bp_mobileMenuShift) {
+                            // @include typography(getFont(1), 21px, 27.6px, 400, inherit);
+                            margin: 0 auto;
+                        }
+                        @media (max-width: $bp_mobile) {
+                            max-width: 100%;
+                        }
+                    }
+                }
+                .tb-c-wr {
+                    @media (max-width: $bp_tabletPortrait3) {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .cta-container {
+        padding-top: 70px;
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "name": "acf/our-services",
+    "title": "Our Services",
+    "description": "Title with Three Column List",
+    "category": "custom-layout",
+    "icon": "editor-ul",
+    "keywords": ["three-column", "marketing", "design", "list"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "our-services.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "our-services/preview.jpg"
+            }
+        }
+    }
+}

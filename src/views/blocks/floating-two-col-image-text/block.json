@@ -1,0 +1,24 @@
+{
+    "name": "acf/floating-two-col-image-text",
+    "title": "Floating Two-column image/text",
+    "description": "Floating Two-column image/text",
+    "category": "custom-layout",
+    "icon": "columns",
+    "keywords": ["two column", "image", "text", "container", "floating"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "floating-two-col-image-text.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "floating-two-col-image-text/preview.jpg"
+            }
+        }
+    }
+}

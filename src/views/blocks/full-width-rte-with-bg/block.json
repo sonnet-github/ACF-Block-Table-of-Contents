@@ -1,0 +1,24 @@
+{
+    "name": "acf/full-width-rte-with-bg",
+    "title": "Full with RTE with Background Image",
+    "description": "Rich text editor with background image",
+    "category": "custom-layout",
+    "icon": "columns",
+    "keywords": ["full width", "rte", "text", "background image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "full-width-rte-with-bg.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "preview",
+            "data" : {
+                "preview_image" : "full-width-rte-with-bg/preview.jpg"
+            }
+        }
+    }
+}
