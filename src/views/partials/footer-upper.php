@@ -7,44 +7,93 @@
  * @since SDEV WP Theme 2.0
  */  
 
-    $phone = get_field('gen_phone_number', 'options');
-    $email = get_field('gen_email_address', 'options');
-    $location = get_field('gen_location', 'options');
-    $icon_class = (defined('FOOTER_ALT_CLASS')) ? '-light' : '';
 ?>
-<div class="pf-upper container-block">
-    <div id="get-in-touch">
-        <div class="git-heading">
-            <h3><?= get_field('get_in_touch_heading', 'options')  ?></h3>
-            <h5><?= get_field('get_in_touch_subheading', 'options')  ?></h5>
-        </div>
-        <div class="git-details">
-            <div class="tb-wr">
-                <div class="tb-c-wr spacer-cell"></div>
-                <div class="tb-c-wr phone-cell">
-                    <?php if($phone) : ?>
-                        <a href="tel:<?= $phone ?>" target="_blank">
-                            <img src="<?= \SDEV\Utils::getThemeResourcePath('assets/images/phone-icon'.$icon_class.'.svg') ?>" alt="Phone Icon" />
-                            <span><?= $phone ?></span>
+<div class="pf-upper">
+    <div class="container-block">
+        <div class="tb-wr">
+            <div class="tb-c-wr left-cell va-top main-logo-cell">
+                <?php $mainLogo = get_field('footer_logo', 'option'); ?>
+                <a href="<?php echo site_url(); ?>"><img src="<?php echo $mainLogo['url']; ?>" alt="<?php echo $mainLogo['alt']; ?>" class="footer-logo"></a>
+                <div class="icons-text-section desktop-only">
+                    <?php if (have_rows('footer_icon_text', 'option')) : while (have_rows('footer_icon_text', 'option')) : the_row(); 
+                        $iconTextLink = get_sub_field('fit_link', 'option'); 
+                        $icon = get_sub_field('fit_icon', 'option'); 
+                    ?>
+                        <div class="icons-text-container">
+                            <?php if ($iconTextLink) : ?>
+                                <a href="<?php echo $iconTextLink; ?>">
+                                    <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+                                    <p><?php the_sub_field('fit_text','option'); ?></p>
+                                </a>
+                            <?php else : ?>
+                                <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+                                <p><?php the_sub_field('fit_text','option'); ?></p>
+                            <?php endif; ?>
+                        </div>
+                    <?php endwhile; endif; ?>
+                </div>
+
+            </div>
+            <div class="tb-c-wr va-top info-cell">
+                <div class="row-one">
+                    <div class="footer-links">
+                        <?php if (have_rows('footer_links', 'option')) : while(have_rows('footer_links', 'option')) : the_row(); 
+                            $footerLink = get_sub_field('footer_menu_link', 'option');  
+                        ?>
+                            <a href="<?php echo $footerLink['url']; ?>" target="<?php echo $footerLink['target']; ?>">
+                                <?php echo $footerLink['title']; ?>
+                            </a>
+                        <?php endwhile; endif; ?>
+                    </div>
+                    <div class="socmed-icons">
+                        <?php if (have_rows('social_media_icons', 'option')) : while(have_rows('social_media_icons', 'option')) : the_row();
+                            $socmedIcon = get_sub_field('smi_icon', 'option'); 
+                            $socmedLink = get_sub_field('smi_link', 'option');
+                        ?>
+                            <a href="<?php echo $socmedLink['url']; ?>" target="<?php echo $socmedLink['target']; ?>">
+                                <img src="<?php echo $socmedIcon['url']; ?>" alt="<?php echo $socmedIcon['alt']; ?>">
+                            </a>
+                        <?php endwhile; endif; ?>
+                    </div>
+                    <div class="cta-button">
+                        <?php $ctaLink = get_field('contact_button', 'option'); ?>
+                        <a href="<?php echo $ctaLink['url']; ?>" target="<?php echo $ctaLink['target']; ?>" class="btn-default primary small">
+                            <?php echo $ctaLink['title']; ?>
                         </a>
-                    <?php endif; ?>
+                    </div>
                 </div>
-                <div class="tb-c-wr email-cell">
-                    <?php if($email) : ?>
-                        <a href="mailto:<?= $email ?>" target="_blank">
-                            <img src="<?= \SDEV\Utils::getThemeResourcePath('assets/images/email-icon'.$icon_class.'.svg') ?>" alt="E-mail Icon" />
-                            <span><?= $email ?></span>
-                        </a>
-                    <?php endif; ?>
+                <div class="row-two desktop-only">
+                    <p><?php the_field('copyright_text','option'); ?></p>
+                    <p><?php the_field('abn_text','option'); ?></p>
                 </div>
-                <div class="tb-c-wr location-cell">
-                    <?php if($location) : ?>
-                        <img src="<?= \SDEV\Utils::getThemeResourcePath('assets/images/location-pin-icon'.$icon_class.'.svg') ?>" alt="Location Pin Icon" />
-                        <span><?= $location ?></span>
-                    <?php endif; ?>
-                </div>
-                <div class="tb-c-wr spacer-cell"></div>
             </div>
         </div>
+        <div class="mobile-content mobile-only">
+                <div class="col-one">
+                    <div class="icons-text-section">
+                        <?php if (have_rows('footer_icon_text', 'option')) : while (have_rows('footer_icon_text', 'option')) : the_row(); 
+                            $iconTextLink = get_sub_field('fit_link', 'option'); 
+                            $icon = get_sub_field('fit_icon', 'option'); 
+                        ?>
+                            <div class="icons-text-container">
+                                <?php if ($iconTextLink) : ?>
+                                    <a href="<?php echo $iconTextLink; ?>">
+                                        <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+                                        <p><?php the_sub_field('fit_text','option'); ?></p>
+                                    </a>
+                                <?php else : ?>
+                                    <img src="<?php echo $icon['url']; ?>" alt="<?php echo $icon['alt']; ?>">
+                                    <p><?php the_sub_field('fit_text','option'); ?></p>
+                                <?php endif; ?>
+                            </div>
+                        <?php endwhile; endif; ?>
+                    </div>
+                </div>
+                <div class="col-two">
+                    <p><?php the_field('copyright_text','option'); ?></p>
+                    <p><?php the_field('abn_text','option'); ?></p>
+                </div>
+            </div>
+        <hr> 
     </div>
 </div>
