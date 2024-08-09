@@ -63,7 +63,7 @@
             <?php endif; ?>
             <div class="tiles-grid">
                 <?php foreach($tiles as $si => $sv) : ?>
-                    <div class="tile-item">
+                    <div class="tile-item" style="background-color: <?= $sv['background_color']; ?>">
                         <img src="<?= $sv['icon']['url']; ?>" alt="<?= $sv['icon']['alt']; ?>">
                         <h4 class="<?= $sv['title_alignment']; ?>" style="color: <?= $sv['title_color']; ?>"><?= $sv['title']; ?></h4>
                         <?php if ($sv['description']) : ?>
